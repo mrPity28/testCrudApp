@@ -5,6 +5,11 @@ import LoginView from '../views/LoginView.vue'
 import HomeView from '../views/HomeView.vue'
 import AdminView from '../views/AdminView.vue'
 
+import PeliculasView from '../views/PeliculasView.vue'
+
+import CategoriaView from '../views/CategoriaView.vue'
+import AlquilarVenderPeliculaView from '../views/AlquilarVenderPeliculaView.vue'
+
 const routes = [
   {
     path: '/',
@@ -20,6 +25,22 @@ const routes = [
     path: '/admin',
     name: 'admin',
     component: AdminView
+  },
+
+  {
+    path: '/peliculas',
+    name: 'Peliculas',
+    component: PeliculasView
+  },
+  {
+    path: '/categorias',
+    name: 'Categorias',
+    component: CategoriaView
+  },
+  {
+    path: '/vender',
+    name: 'Vender Peliculas',
+    component: AlquilarVenderPeliculaView
   },
 
 ]
