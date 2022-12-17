@@ -5,10 +5,10 @@ const UsuarioServices = {
 login : async (Username,Password) => {
     try {
         const body ={
-            Username:Username,
+            User:Username,
             Password:Password,
         }
-      const res = await axios.post(url + "Usuario/loginadmin",body);
+      const res = await axios.post(url + "Usuario/login",body);
       return res.data;
     } catch (e) {
       return e;

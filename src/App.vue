@@ -1,12 +1,16 @@
 <template>
-  <!-- <navbar v-if="rederselect" /> -->
+  <navbar v-if="rederselect" />
   <router-view></router-view>
 </template>
 
 <script>
+import navbar from "./components/Navbar.vue";
 
 
 export default {
+  components: {
+    navbar,
+  },
   computed: {
     rederselect() {
       return this.$route.path !== "/login";
